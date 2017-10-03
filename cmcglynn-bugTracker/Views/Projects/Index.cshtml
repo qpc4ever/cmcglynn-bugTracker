@@ -1,0 +1,75 @@
+﻿@model IEnumerable<cmcglynn_bugTracker.Models.CodeFirst.Project>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+@if (User.IsInRole("Admin, Project Manager"))
+{
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+}
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Created)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Updated)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AuthorId)
+        </th>
+        <th>Assigned Users</th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Created)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Updated)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AuthorId)
+            </td>
+            <td>
+                @foreach (var user in item.Users)
+                {
+                    <p>@user.FullName</p>
+                }
+            </td>
+
+
+            <td>
+                @if (User.IsInRole("Admin, Project Manager"))
+                {
+                    @Html.ActionLink("Assigned Roles", "Index", "Admin")<br />
+                    @Html.ActionLink("Assigned Users", "ProjectUser", new { id = item.Id })<br />
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Id })<br />
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })<br />
+                }
+                @Html.ActionLink("Details", "Details", new { id = item.Id })
+
+            </td>
+        </tr>
+    }
+
+</table>

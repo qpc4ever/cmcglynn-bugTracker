@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
+    <title>Maple Admin - is a responsive admin template</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="../assets/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Menu CSS -->
+    <link href="../assets/bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../main/css/style.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" style="margin-bottom: 0">
+            <div class="navbar-header"> <a class="navbar-toggle hidden-sm hidden-md hidden-lg " href="javascript:void(0)" data-toggle="collapse" data-target=".navbar-collapse"><i class="ti-menu"></i></a>
+                <div class="top-left-part">
+                    <a class="logo" href="index.html"><img alt="home" src="../assets/images/logo.png"></a>
+                </div>
+            </div>
+            <!-- /.navbar-header -->
+            <!-- /.navbar-top-links -->
+            <!-- /.navbar-static-side -->
+        </nav>
+        <div class="navbar-default sidebar nicescroll" role="navigation">
+            <div class="sidebar-nav navbar-collapse ">
+                <ul class="nav" id="side-menu">
+                    <li><a href="#intro"><span>Introduction</span></a></li>
+                    <li><a href="#structure"><span>Structure</span></a></li>
+                    <li><a href="#html"><span>Html</span></a></li>
+                    <li><a href="#css"><span>Less - css</span></a></li>
+                    <li><a href="#js"><span>Js</span></a></li>
+                    <li><a href="#credits"><span>Credits</span></a></li>
+                    <li><a href="#support"><span>Support</span></a></li>
+                </ul>
+            </div>
+            <!-- /.sidebar-collapse -->
+        </div>
+        <!-- Page Content -->
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <div class="row bg-title">
+                    <div class="col-lg-12">
+                        <h4 class="page-title">Documentation</h4>
+                        <ol class="breadcrumb">
+                            <li><a href="#">Dashboard</a></li>
+                            <li class="active">Documentation</li>
+                        </ol>
+                    </div>
+                    <!-- /.col-lg-12 -->
+                </div>
+                <!-- row -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="white-box">
+                            <h3 id="intro">introduction</h3>
+                            <p>Maple Admin is a popular open source WebApp template for admin dashboards and control panels. It is a responsive HTML template that is based on the CSS framework Bootstrap 3.3.7 It utilizes all of the Bootstrap components in its design and re-styles many commonly used plugins to create a consistent design that can be used as a user interface for backend applications. Maple Admin is based on a modular design, which allows it to be easily customized and built upon. This documentation will guide you through installing the template and exploring the various components that are bundled with the template. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="white-box">
+                            <h3 id="structure">Structure</h3>
+                            <pre>
+                <p>
+                  Maple Admin
+                  ├── 
+                  │   └── css/
+                  │       └── All css files
+                  │   └── fonts/
+                  │       └── All fonts files
+                  │   └── js/
+                  │       └── All javascripts
+                  │   └── images
+                  │       └── All images
+                  │   └── less
+                  │       └── All less files
+                  │   └── bower_components
+                  │       └── All Addons 
+                  └── html
+                      └── html files
+                </p>
+              </pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="white-box">
+                            <h3 id="html">Html Structure</h3>
+                            <pre>
+               
+               &lt;body&gt;
+
+                    <span style="color:#ccc;">&lt;!-- Preloader --&gt;</span>
+                    &lt;div class="preloader"&gt;
+                    &lt;div class="cssload-speeding-wheel"&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                     <span style="color:#ccc;">&lt;!-- End Preloader --&gt;</span>
+
+                   <span style="color:#ccc;">&lt;!-- Wrapper --&gt;</span>
+                  &lt;div id="wrapper"&gt;
+
+                   <span style="color:#ccc;">&lt;!-- Top Section --&gt;</span>
+                  &lt;nav class="navbar navbar-default navbar-static-top"&gt;
+
+                     <span style="color:#ccc;">&lt;!-- Your Logo --&gt;</span>
+                    &lt;div class="top-left-part"&gt;
+                      &lt;a href="index.html" class="logo"&gt; ... &lt;/a&gt; 
+                    &lt;/div&gt;
+                     <span style="color:#ccc;">&lt;!-- End Your Logo --&gt;</span>
+                  &lt;/nav&gt;
+                   <span style="color:#ccc;">&lt;!-- Top Section End --&gt;</span>
+
+                   <span style="color:#ccc;">&lt;!-- Left Navigation --&gt;</span>
+                  &lt;div class="navbar-default sidebar nicescroll"&gt; &lt;/div&gt;
+                   <span style="color:#ccc;">&lt;!-- Left Navigation End --&gt;</span>
+
+
+                   <span style="color:#ccc;">&lt;!-- Main Content --&gt;</span>
+                  
+                     <span style="color:#ccc;">&lt;!-- Start Page wrapper --&gt;</span>
+                    &lt;div class="page-wrapper"&gt;
+                       <span style="color:#ccc;">&lt;!-- Start Container --&gt;</span>
+                      &lt;div class="container-fluid"&gt; ... &lt;/div&gt;
+                       <span style="color:#ccc;">&lt;!-- End container --&gt;</span>
+                    &lt;/div&gt;
+                     <span style="color:#ccc;">&lt;!-- End Page wrapper --&gt;</span>
+                    
+                     <span style="color:#ccc;">&lt;!-- footer --&gt;</span>
+                    &lt;footer class="footer text-center"&gt; 2016 © Myadmin brought to you by themedesigner.in &lt;/footer&gt;
+                     <span style="color:#ccc;">&lt;!-- End footer --&gt;</span>
+                    
+                    
+                 
+
+                  &lt;/div&gt;
+                   <span style="color:#ccc;">&lt;!-- End Wrapper --&gt;</span>
+
+                  &lt;/body&gt;
+                  &lt;/html&gt;
+
+              </pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="white-box">
+                            <h3 id="css">Less - Css</h3>
+                            <table class="table table-bordered m-0">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 20%;">File</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>bootstrap.css</code> </td>
+                                        <td> I use the bootstrap v3.3.6. you can update bootstrapversion any time </td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>spinners.css</code>/<code>spinners.css</code> </td>
+                                        <td> This file is has preloader css. </td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>myadmin.less</code>/<code>myadmin.css</code> </td>
+                                        <td> This file is has all the classes for the template. </td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>variable.less</code>/<code>variable.css</code> </td>
+                                        <td> This file is has all the predefine classes for the template. </td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>sidebar-nav.less</code>/<code>sidebar-nav.css</code> </td>
+                                        <td> this file content sidebar-nav for css. </td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>widgets.less</code>/<code>widgets.css</code> </td>
+                                        <td> This file contains the styles for all the components, ui elements, and some other parts of the theme. </td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>responsive.less</code>/<code>responsive.css</code> </td>
+                                        <td> This file is containing the styles related to responsiveness support. </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="white-box">
+                            <h3 id="js">Javascript</h3>
+                            <table class="table table-bordered m-0">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 20%;">File</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>jquery.js</code>, <code>bootstrap.js</code>, <code>jquery.nicescroll</code> </td>
+                                        <td> These files are used at main files of the theme. and nicescroll is for sidebarscroll </td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>myadmin.js</code> </td>
+                                        <td> This is a main function js file. it contain sidebar and other basic js</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>metisMenu.js</code> </td>
+                                        <td> This file contains sidebarnavigation js</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>wave.js</code> </td>
+                                        <td> This is for wave effects on buttons and other elements</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="white-box">
+                            <h3 id="credits">Credits</h3>
+                            <ul class="common">
+                                <li><a href="http://getbootstrap.com/">Bootstrap</a></li>
+                                <li><a href="https://jquery.com/">Jquery</a></li>
+                                <li><a href="http://fortawesome.github.io/Font-Awesome/">Font-Awesome</a></li>
+                                <li><a href="http://tristanedwards.me/sweetalert">Sweet-Alert</a></li>
+                                <li><a href="http://dbushell.com/">Nestable</a></li>
+                                <li><a href="http://areaaperta.com/nicescroll/">Nicescroll</a></li>
+                                <li><a href="http://arshaw.com/fullcalendar/">Full Calendar</a></li>
+                                <li><a href="http://jqueryvalidation.org/">Form Validator</a></li>
+                                <li><a href="http://jdewit.github.com/bootstrap-timepicker">Bootstrap-timepicker</a></li>
+                                <li><a href="http://www.eyecon.ro/bootstrap-colorpicker">Bootstrap Colorpicker</a></li>
+                                <li><a href="http://loudev.com/">Multi-select</a></li>
+                                <li><a href="https://select2.github.io/">Select2</a></li>
+                                <li><a href="https://github.com/xing/wysihtml5">Wysihtml5</a></li>
+                                <li><a href="https://www.datatables.net">Datatables</a></li>
+                                <li><a href="http://morrisjs.github.io/morris.js/">Morris</a></li>
+                                <li><a href="http://chartjs.org/">Chartjs</a></li>
+                                <li><a href="http://omnipotent.net/jquery.sparkline/">Sparkline</a>
+                                    <li><a href="https://hpneo.github.io/gmaps/">Gmaps</a></li>
+                                    <li><a href="http://jqvmap.com">Vector Maps</a></li>
+                                    <li><a href="https://pexels.com/">Pexels (images)</a></li>
+                                    <li><a href="http://www.flotcharts.org/">Flot-charts</a></li>
+                                    <li><a href="https://github.com/dixso/custombox"> Custombox</a></li>
+                                    <li><a href="http://owlgraphic.com/owlcarousel/"> Owl carousel</a></li>
+                                    <li><a href="https://themify.me/themify-icons">Themify-icons</a></li>
+                                    <li><a href="https://erikflowers.github.io/weather-icons/"> Weather icons</a></li>
+                                    <li><a href="https://github.com/abpetkov/switchery"> Switchery</a></li>
+                                    <li><a href="https://github.com/silviomoreto/bootstrap-select"> Bootstrap select</a></li>
+                                    <li><a href="http://www.tinymce.com/">Wysiwig Editor</a></li>
+                                    <li><a href="https://github.com/wenzhixin/bootstrap-table-examples"> Bootstrap tables</a></li>
+                                    <li><a href="https://gionkunz.github.io/chartist-js/"> Chartist chart</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="white-box">
+                            <h3 id="support">Support</h3>
+                            <p>If you need any help or feel any query don't hasitate just mail me (with licence key) on niravjoshi87@gmail.com, iwould love to help you, Once again thanks for the purchasing myadmin template, i hope you enjoy it. <strong>Thanks</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container-fluid -->
+        </div>
+        <!-- /#page-wrapper -->
+        <footer class="footer text-center"> 2017 &copy; Mapleadmin brought to you by wrappixel.com </footer>
+    </div>
+    <!-- /#wrapper -->
+    <!-- jQuery -->
+    <script src="../assets/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Menu Plugin JavaScript -->
+    <script src="../assets/bower_components/metisMenu/dist/metisMenu.min.js"></script>
+    <!--Nice scroll JavaScript -->
+    <script src="../main/js/jquery.nicescroll.js"></script>
+    <!--Wave Effects -->
+    <script src="../main/js/waves.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="../main/js/myadmin.js"></script>
+    <script>
+    $('.sidebar-nav ul li a').click(function() {
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top - 100
+        }, 500);
+        return false;
+    });
+    </script>
+    <style>
+    #side-menu > li > a:focus {
+        background: #13dafe!important;
+        color: #fff!important;
+    }
+    </style>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+﻿@model cmcglynn_bugTracker.Models.AdminUserViewModels
+
+@{
+    ViewBag.Title = "EditUserRoles";
+}
+
+<h2>EditUserRoles</h2>
+<hr />
+
+@using (Html.BeginForm("EditUserRoles", "Admin", FormMethod.Post))
+{
+    <h4>
+        @Html.DisplayFor(model => model.User.FullName)
+        <input type="submit" value="Assign Roles" class="btn btn-default pull-right" style="margin-top: -7px"/>
+    </h4>
+    <hr />
+    @Html.HiddenFor(model => model.User.Id)
+    @Html.ListBox("SelectedRoles", Model.Roles)
+}
+
+<div style="margin-top: 40px">
+    @Html.ActionLink("Back to Admin Index", "Index")
+</div>
+
+
+        @*[HttpPost]
+        public ActionResult EditUserRoles(AdminUserViewModels model)
+        {
+            var user = db.Users.Find(model.User.Id);
+            UserRoleHelper helper = new UserRoleHelper();
+            foreach (var role in db.Roles.Select(r => r.Name).ToList())
+            {
+                helper.RemoveUserFromRole(user.Id, role);
+            }
+            if (model.SelectedRoles != null)
+            {
+                foreach (var role in model.SelectedRoles)
+                {
+                    helper.AddUserToRole(user.Id, role);
+                }
+                return RedirectToAction("Index");
+            }
+            return RedirectToAction("Index");
+        }*@

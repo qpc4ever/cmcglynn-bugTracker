@@ -1,0 +1,61 @@
+﻿@model cmcglynn_bugTracker.Models.EmailModel
+
+@{
+    ViewBag.Title = "Contact";
+}
+@*<h2>@ViewBag.Title.</h2>*@
+@*<h2>@ViewBag.Message</h2>*@
+
+@using (Html.BeginForm())
+{
+
+    @Html.AntiForgeryToken()
+    <h2>Send me a message.</h2>
+    <hr />
+    @Html.ValidationSummary("", new { @class = "text-danger" })
+    <div class="form-group">
+        @Html.LabelFor(m => m.FromName, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.FromName, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.FromName)
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.FromEmail, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.FromEmail, new
+       {
+           @class = "form-control",
+           placeholder =
+"example@email.com"
+       })
+            @Html.ValidationMessageFor(m => m.FromEmail)
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Body, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            <textarea id="editor" class="form-control" name="Body" rows="5"></textarea>
+            @*@Html.TextBoxFor(m => m.Body, new { @class = "form-control" })*@
+            @Html.ValidationMessageFor(m => m.Body)
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" class="btn btn-primary" value="Send" />
+        </div>
+    </div>
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+        <script src="~/Scripts/tinymce/tinymce.min.js"></script>
+        <script src="~/Scripts/tinymce/jquery.tinymce.min.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                tinymce.init({
+                    selector: '#editor'
+                });
+            });
+        </script>
+    }
+}

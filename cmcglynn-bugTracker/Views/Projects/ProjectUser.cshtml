@@ -1,0 +1,16 @@
+﻿@model cmcglynn_bugTracker.Models.ProjectViewModel
+@{
+    ViewBag.Title = "ProjectUser";
+}
+
+<h2>Assingn Users to Projects</h2>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(model => model.AssignProjectId)
+
+    <h3>Project Name : @Model.AssignProject.Title</h3>
+
+    @Html.ListBox("SelectedUsers", Model.Users)
+    <button type="submit">Submit</button>
+}

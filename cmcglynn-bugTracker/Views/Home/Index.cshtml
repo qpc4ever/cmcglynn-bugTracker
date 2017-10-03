@@ -1,0 +1,197 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="section-admin container-fluid">
+    <div class="row admin text-center">
+        <div class="col-lg-4 col-sm-12">
+            <div class="row">
+                <div class="col-lg-12 col-sm-4">
+                    <div class="admin-content no-margin-top text-light text-left" style="background-color:#4c5667;">
+                        <table class="table table-theme">
+                            <tbody>
+                                <tr>
+                                    <td class="no-padding">
+                                        <div id="website-stats-1" class="chart-container theme-background-transparent" style="height:60px !important;"></div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="row vertical-center-box vertical-center-box-tablet mar-top-30">
+                            <div class="col-xs-7 text-light">
+                                <h3>Total Visits</h3>
+                                <h2 class="no-margin">33000</h2>
+                            </div>
+                            <div class="col-xs-5 text-right">
+                                <label class="label bg-blue" style="font-size:12px;"><i class="arrow_up"></i> 25%</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-sm-4">
+                    <div class="admin-content no-margin-top text-light text-left" style="background-color:#8a97ad;">
+                        <table class="table table-theme">
+                            <tbody>
+                                <tr>
+                                    <td class="no-padding">
+                                        <div id="website-stats-2" class="chart-container theme-background-transparent" style="height:60px !important;"></div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="row vertical-center-box vertical-center-box-tablet mar-top-30">
+                            <div class="col-xs-7 text-light">
+                                <h3>Total Sales</h3>
+                                <h2 class="no-margin">50000</h2>
+                            </div>
+                            <div class="col-xs-5 text-right">
+                                <label class="label bg-red" style="font-size:12px;"><i class="arrow_down"></i> 5%</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-sm-4">
+                    <div class="admin-content no-margin-top text-light text-left" style="background-color:#c7cfdb;">
+                        <table class="table table-theme">
+                            <tbody>
+                                <tr>
+                                    <td class="no-padding">
+                                        <div id="website-stats-3" class="chart-container theme-background-transparent" style="height:60px !important;"></div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="row vertical-center-box vertical-center-box-tablet mar-top-30">
+                            <div class="col-xs-7 text-light">
+                                <h3>Site Analysis</h3>
+                                <h2 class="no-margin">75000</h2>
+                            </div>
+                            <div class="col-xs-5 text-right">
+                                <label class="label bg-dark-green" style="font-size:12px;"><i class="arrow_up"></i> 17%</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8 col-sm-12">
+            <div class="admin-content">
+                <h3>Site Visits</h3>
+                <div class="row mar-top-30">
+                    <div class="col-md-12">
+                        <div id="Visitors" class="chart-container theme-background-transparent"></div>
+                    </div>
+                    <div class="col-md-12 text-center text-lighter text-uppercase mar-top-30">
+                        <div class="row">
+                            <div class="col-md-2 col-xs-4">
+                                <div id="sparkline1" class="sparkline-container">Loading..</div>
+                                <h5><b>USA</b></h5>
+                            </div>
+                            <div class="col-md-2 col-xs-4">
+                                <div id="sparkline2" class="sparkline-container">Loading..</div>
+                                <h5><b>India</b></h5>
+                            </div>
+                            <div class="col-md-2 col-xs-4">
+                                <div id="sparkline3" class="sparkline-container">Loading..</div>
+                                <h5><b>UK</b></h5>
+                            </div>
+                            <div class="col-md-2 col-xs-4">
+                                <div id="sparkline4" class="sparkline-container">Loading..</div>
+                                <h5><b>Australia</b></h5>
+                            </div>
+                            <div class="col-md-2 col-xs-4">
+                                <div id="sparkline5" class="sparkline-container">Loading..</div>
+                                <h5><b>China</b></h5>
+                            </div>
+                            <div class="col-md-2 col-xs-4">
+                                <div id="sparkline6" class="sparkline-container">Loading..</div>
+                                <h5><b>France</b></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section-admin container-fluid">
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="admin-content">
+                <h3>CPU Load</h3>
+                <div id="live-chart" class="chart-container mar-top-30" style="height:285px !important;"></div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="admin-content">
+                <div id="vmap_world" class="vmaps" style="height:335px !important;"></div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="admin-content">
+                <h3>Browser Stats</h3>
+                <table class="table table-theme mar-top-30">
+                    <tbody>
+                        <tr>
+                            <td>
+                                Google Chrome
+                            </td>
+                            <td class="text-right">
+                                <label class="label bg-green">35%</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Firefox
+                            </td>
+                            <td class="text-right">
+                                <label class="label bg-orange">19%</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Apple Safari
+                            </td>
+                            <td class="text-right">
+                                <label class="label bg-yellow">15%</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Opera
+                            </td>
+                            <td class="text-right">
+                                <label class="label bg-red">5%</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Internet Explorer
+                            </td>
+                            <td class="text-right">
+                                <label class="label bg-blue">5%</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Mini Opera
+                            </td>
+                            <td class="text-right">
+                                <label class="label bg-dark-green">16%</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Mini Safari
+                            </td>
+                            <td class="text-right">
+                                <label class="label bg-purple">21%</label>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

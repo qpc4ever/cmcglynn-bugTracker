@@ -1,0 +1,1168 @@
+﻿
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>cmcglynn-bugTracker</title>
+    <meta name="description" content="Premium HTML5 Template">
+    <meta name="keywords" content=" HTML5, Premium Template, Nucleus Theme">
+    <meta name="author" content="Amazyne Themes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="~/assets/images/cm_monogram_1x.png?" type="image/x-icon" />
+    <!-- Loading Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700' rel='stylesheet' type='text/css'>
+    <!-- Loading Third Party Styles -->
+    <link rel="stylesheet" href="~/Assets/third-party/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Assets/third-party/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/Assets/third-party/et-line/css/style.css">
+    <link rel="stylesheet" href="~/Assets/third-party/elegant-icons/css/style.css">
+    <link rel="stylesheet" href="~/Assets/third-party/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="~/Assets/third-party/pe-icon-7-stroke/css/helper.css">
+    <link rel="stylesheet" href="~/Assets/third-party/nivo-lightbox/css/nivo-lightbox.css" />
+    <link rel="stylesheet" href="~/Assets/third-party/nivo-lightbox/themes/default/default.css" />
+    <link rel="stylesheet" href="~/Assets/third-party/animate/css/animate.css">
+    <link rel="stylesheet" href="~/Assets/third-party/owl/css/owl.carousel.css">
+    <link rel="stylesheet" href="~/Assets/third-party/owl/css/owl.theme.css">
+    <link rel="stylesheet" href="~/Assets/third-party/form-validation/css/formValidation.min.css">
+    <!-- Loading Page's Styles -->
+
+    <link rel="stylesheet" href="~/Assets/third-party/morris.js/morris.css">
+    <link rel="stylesheet" href="~/Assets/third-party/dropzone/css/dropzone.min.css">
+    <link rel="stylesheet" href="~/Assets/third-party/full-calendar/css/fullcalendar.min.css">
+    <link rel="stylesheet" href="~/Assets/third-party/jqv-map/dist/jqvmap.min.css">
+
+    <!-- Loading Theme's Styles -->
+    <link rel="stylesheet" href="~/Assets/css/style.css">
+    <link rel="stylesheet" href="~/Assets/css/custom.css">
+    <!-- Script for IE < 9 -->
+    <!--[if lt IE 9]>
+    <script src="third-party/respond/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<!-- Remove "header-side" if side menu isn't present | Remove "in" if you want the side-header closed by default -->
+
+<body class="header-side in">
+    <!-- Page Loader -->
+    <div class="loader">
+        <div class="spinner"></div>
+    </div>
+    <!-- Page Content -->
+    <div class="page-content">
+        <!-- Header - Add "light" for light menu | "nav-dark-blue" for dark-blue accent | "nav-blue" for blue accent | "nav-blue-grey" for blue-grey accent |
+             "nav-green" for green accent | "nav-dark-green" for dark-green accent | "nav-purple" for purple accent | "nav-red" for red accent |
+              "nav-Orange" for Orange accent | "nav-yellow" for yellow accent -->
+        <header class="navigation">
+
+            <!-- Header Wrapper -->
+            <div class="main-nav dark-dropdown nav-icons-right header-icons header-right">
+                <div class="navbar navbar-default" role="navigation">
+                    <div class="container active">
+                        <div class="navbar-header">
+                            <a href="#" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <ul class="bar-icon-wrapper">
+                                    <li class="bar-icon"></li>
+                                    <li class="bar-icon"></li>
+                                    <li class="bar-icon"></li>
+                                </ul>
+                            </a>
+
+                            <!-- Logo -->
+                            <a class="logo" href="index.html">
+                                <img alt="~/Assets/image" src="~/Assets/images/logo.png" />
+                            </a><!-- End of Logo -->
+                        </div>
+
+                        <!-- Top Bar Icons -->
+
+                        <div class="navbar-icons">
+
+                            <!-- Left aligned icons-->
+
+                            <ul class="nav navbar-nav navbar-left">
+
+                                <!-- Sidebar Menu Trigger -->
+
+                                <li class="menu-icon">
+                                    <a class="side-menu-trigger" href="#">
+                                        <ul class="bar-icon-wrapper">
+                                            <li class="bar-icon"></li>
+                                            <li class="bar-icon"></li>
+                                            <li class="bar-icon"></li>
+                                        </ul>
+                                    </a>
+                                </li><!-- End of Sidebar Menu Trigger -->
+                                <!-- Account Dropdown -->
+
+                                <li class="nav-account dropdown">
+                                    <a href="#"><img alt="img" class="profile-picture" src="~/Assets/images/team/man-test-2.jpg" /></a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <div class="profile-details">
+                                                <p class="name">Jason Smith</p>
+                                                <p class="designation">Managing Director</p>
+                                            </div>
+                                        <li>
+                                        <li><a href="#">Profile</a></li>
+                                        <li>@Html.Partial("_LoginPartial")</li>
+                                        @*<li><a href="@Html.Partial("_LoginPartial")"><span class="menu-badge bg-yellow">8</span></a></li>*@
+                                        <li><hr /></li>
+                                        <li><a href="#">Lock</a></li>
+                                    </ul>
+                                </li><!-- End of Account Dropdown -->
+                                <!-- Messages Dropdown -->
+
+                                <li class="nav-messages dropdown">
+                                    <a href="#"><i class="pe-7s-mail"></i><span class="menu-badge bg-purple">8</span></a>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown-heading"><span class="number">8 pending</span> notifications <a href="#">View All</a></li>
+                                        <li>
+                                            <div class="slim-scroll-dropdown-content">
+                                                <div class="slim-scroll-div">
+                                                    <ul class="inner-dropdown-content">
+                                                        <li>
+                                                            <a>
+                                                                <div class="media">
+                                                                    <div class="media-left friend-online">
+                                                                        <img alt="img" class="media-object" src="~/Assets/images/team/woman-test.jpg">
+                                                                        <i></i>
+                                                                    </div>
+                                                                    <div class="media-body">
+                                                                        <h5 class="media-heading">Jane Doe</h5>
+                                                                        <p>Nibh auctor nibh congue nibh. auctor nibh auctor nibh... </p>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="time-badge">Just now</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a>
+                                                                <div class="media">
+                                                                    <div class="media-left friend-online">
+                                                                        <img alt="img" class="media-object" src="~/Assets/images/team/man-test.jpg">
+                                                                        <i></i>
+                                                                    </div>
+                                                                    <div class="media-body">
+                                                                        <h5 class="media-heading">James Doe</h5>
+                                                                        <p>Vivamus sed congue nibh auctor nibh congue nibh. auctor nibh auctor nibh... </p>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="time-badge">7 min ago</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a>
+                                                                <div class="media">
+                                                                    <div class="media-left friend-online">
+                                                                        <img alt="img" class="media-object" src="~/Assets/images/team/man-test-2.jpg">
+                                                                        <i></i>
+                                                                    </div>
+                                                                    <div class="media-body">
+                                                                        <h5 class="media-heading">Jack Doe</h5>
+                                                                        <p>Sed congue nibh auctor nibh congue nibh congue nibh... </p>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="time-badge">12 hours ago</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a>
+                                                                <div class="media">
+                                                                    <div class="media-left friend-online">
+                                                                        <img alt="img" class="media-object" src="~/Assets/images/team/2-square.jpg">
+                                                                        <i></i>
+                                                                    </div>
+                                                                    <div class="media-body">
+                                                                        <h5 class="media-heading">June Doe</h5>
+                                                                        <p>Congue nibh auctor nibh congue nibh auctor nibh... </p>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="time-badge">1 day ago</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li><!-- End of Messages Dropdown -->
+                                <!-- Notification Dropdown -->
+
+                                <li class="nav-notify dropdown">
+                                    <a href="#"><i class="pe-7s-bell"></i><span class="menu-badge bg-blue">10</span></a>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown-heading"><span class="number">8 pending</span> notifications <a href="#">View All</a></li>
+                                        <li>
+                                            <div class="slim-scroll-dropdown-content">
+                                                <div class="slim-scroll-div">
+                                                    <ul class="inner-dropdown-content">
+                                                        <li><a href="#"><span class="details"><i class="bg-blue icon_plus_alt2"></i> 10 New Registrations</span><span class="time-badge">Just Now</span></a></li>
+                                                        <li><a href="#"><span class="details"><i class="bg-green icon_mail_alt"></i> 5 New Messages</span><span class="time-badge">7 min</span></a></li>
+                                                        <li><a href="#"><span class="details"><i class="bg-yellow icon_cog"></i> System Maintenance at 10 PM</span><span class="time-badge">15 min</span></a></li>
+                                                        <li><a href="#"><span class="details"><i class="bg-green icon_like"></i> 40 New Followers</span><span class="time-badge">3 Hrs</span></a></li>
+                                                        <li><a href="#"><span class="details"><i class="bg-red icon_blocked"></i> User IP Blocked</span><span class="time-badge">1 day</span></a></li>
+                                                        <li><a href="#"><span class="details"><i class="bg-purple icon_volume-high_alt"></i> System Error</span><span class="time-badge">1 day</span></a></li>
+                                                        <li><a href="#"><span class="details"><i class="bg-red icon_error-triangle_alt"></i> Storage Server #7 not responding</span><span class="time-badge">2 days</span></a></li>
+                                                        <li><a href="#"><span class="details"><i class="bg-dark icon_volume-high_alt"></i> Application Error</span><span class="time-badge">3 days</span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li><!-- End of Notification Dropdown -->
+                                <!-- Task Dropdown -->
+
+                                <li class="nav-task dropdown">
+                                    <a href="#"><i class="pe-7s-note2"></i><span class="menu-badge bg-green">3</span></a>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown-heading">You have <span class="number">5 pending</span> tasks <a href="#">View All</a></li>
+                                        <li>
+                                            <div class="slim-scroll-dropdown-content">
+                                                <div class="slim-scroll-div">
+                                                    <ul class="inner-dropdown-content">
+                                                        <li><a href="#">Database migration</a></li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <span class="task-progress-text">Application deployment</span><span class="task-badge">98%</span>
+                                                                <div class="progress">
+                                                                    <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 98%;"></div>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <span class="task-progress-text">Mobile app release</span><span class="task-badge">10%</span>
+                                                                <div class="progress">
+                                                                    <div class="progress-bar bg-red" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%;"></div>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <span class="task-progress-text">Web server upgrade</span><span class="task-badge">25%</span>
+                                                                <div class="progress">
+                                                                    <div class="progress-bar bg-yellow" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%;"></div>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <span class="task-progress-text">New UI release</span><span class="task-badge">40%</span>
+                                                                <div class="progress">
+                                                                    <div class="progress-bar bg-blue" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;"></div>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <span class="task-progress-text">Application deployment</span><span class="task-badge">98%</span>
+                                                                <div class="progress">
+                                                                    <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 98%;"></div>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <span class="task-progress-text">Mobile app release</span><span class="task-badge">10%</span>
+                                                                <div class="progress">
+                                                                    <div class="progress-bar bg-red" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%;"></div>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <span class="task-progress-text">Web server upgrade</span><span class="task-badge">25%</span>
+                                                                <div class="progress">
+                                                                    <div class="progress-bar bg-yellow" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%;"></div>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <span class="task-progress-text">New UI release</span><span class="task-badge">40%</span>
+                                                                <div class="progress">
+                                                                    <div class="progress-bar bg-blue" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;"></div>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li><!-- End of Task Dropdown -->
+                            </ul><!-- End of Left Aligned Icons -->
+                            <!-- Right Aligned Icons -->
+
+                            <ul class="nav navbar-nav navbar-right">
+
+                                <!-- Search Icon -->
+
+                                <li class="nav-search">
+                                    <a href="#" class="search-box search-box-trigger"><i class="search-icon pe-7s-search"></i><i class="search-close pe-7s-close"></i></a>
+                                </li><!-- End of Search Icon -->
+                                <!-- Chat/Settings Trigger -->
+
+                                <li class="nav-chat">
+                                    <a href="#" class="chat-trigger"><div class="notification-dot"><span class="pulse"></span><span class="point"></span></div><i class="pe-7s-comment"></i></a>
+                                </li><!-- End of Chat/Settings Trigger -->
+                                <!-- Logout Button -->
+
+                                <li>
+                                    <a href="lock-screen-1.html"><i class="logout-icon pe-7s-power"></i></a>
+                                </li><!-- End of Logout Button -->
+                            </ul><!-- End of Right Aligned Icons -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Search panel -->
+
+                <div class="full-screen-search">
+                    <div class="search-container">
+                        <div class="search-holder">
+                            <form id="searchForm" method="post" action="search-results.html">
+                                <input type="text" name="search" class="search-field" placeholder="Type and Press Enter to Submit" />
+                                <input type="hidden" name="search" />
+                            </form>
+                        </div>
+                    </div>
+                </div><!-- End of Search Panel -->
+                <!-- Side Header | Remove "active" if you want side header closed by default -->
+                <div class="side-header active">
+                    <div class="side-header-container">
+                        <div class="side-header-inner-container">
+                            <ul class="side-header-nav">
+                                <li class="with-dropdown active">
+                                    <a class="menu-dropdown-link" data-toggle="collapse" aria-expanded="true" href="#"><i class="icon-presentation"></i>Dashboards <span class="dropdown-icon"></span></a>
+                                    <ul class="menu-dropdown collapse">
+                                        <li class="active"><a href="Projects/Index">Projects</a></li>
+                                        <li><a href="index-2.html">Dashboard 2</a></li>
+                                        <li><a href="index-3.html">Dashboard 3</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-heading">Features</li>
+                                <li class="with-dropdown">
+                                    <a class="menu-dropdown-link" data-toggle="collapse" aria-expanded="true" href="#"><i class="icon-browser"></i>UI Elements <span class="dropdown-icon"></span></a>
+                                    <ul class="menu-dropdown collapse">
+                                        <li><a href="ui-alerts.html">Alerts</a></li>
+                                        <li><a href="ui-accordions.html">Accordions</a></li>
+                                        <li><a href="ui-buttons.html">Buttons</a></li>
+                                        <li><a href="ui-spinner-buttons.html">Spinner Buttons</a></li>
+                                        <li class="with-dropdown-2">
+                                            <a class="menu-dropdown-link inner" data-toggle="collapse" aria-expanded="true" href="#">Icons <span class="dropdown-icon"></span></a>
+                                            <ul class="menu-dropdown collapse">
+                                                <li><a href="ui-font-awesome-icons.html">Fontawesome</a></li>
+                                                <li><a href="ui-elegant-icons.html">Elegant</a></li>
+                                                <li><a href="ui-7-stroke-icons.html">7 Stroke</a></li>
+                                                <li><a href="ui-et-line-icons.html">ET Line</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="ui-horizontal-timeline.html">Horizontal Timeline</a></li>
+                                        <li><a href="ui-modal-boxes.html">Modal Boxes</a></li>
+                                        <li><a href="ui-notifications.html">Notifications</a></li>
+                                        <li><a href="ui-progress-bars.html">Progress Bars</a></li>
+                                        <li><a href="ui-page-progress-bar.html">Page Progress Bar</a></li>
+                                        <li><a href="ui-portlets.html">Portlets</a></li>
+                                        <li><a href="ui-social-icons.html">Social Icons</a></li>
+                                        <li><a href="ui-steps.html">Steps</a></li>
+                                        <li><a href="ui-tabs.html">Tabs</a></li>
+                                        <li><a href="ui-timeline.html">Timeline</a></li>
+                                        <li><a href="ui-typography.html">Typography</a></li>
+                                        <li><a href="ui-utility.html">Utility</a></li>
+                                        <li><a href="ui-widgets.html">Widgets</a></li>
+                                    </ul>
+                                </li>
+                                <li class="with-dropdown">
+                                    <a class="menu-dropdown-link" data-toggle="collapse" aria-expanded="true" href="#"><i class="icon-linegraph"></i>Charts <span class="dropdown-icon"></span></a>
+                                    <ul class="menu-dropdown collapse">
+                                        <li><a href="charts-charts-js.html">Charts.js</a></li>
+                                        <li><a href="charts-flotchart.html">Flot Charts</a></li>
+                                        <li><a href="charts-google.html">Google Charts</a></li>
+                                        <li><a href="charts-morris.html">Morris Charts</a></li>
+                                    </ul>
+                                </li>
+                                <li class="with-dropdown">
+                                    <a href="#" class="menu-dropdown-link" data-toggle="collapse" aria-expanded="true"><i class="icon-map"></i> Maps <span class="dropdown-icon"></span></a>
+                                    <ul class="menu-dropdown collapse">
+                                        <li><a href="maps-google.html">Google Maps</a></li>
+                                        <li><a href="maps-vector.html">Vector Maps</a></li>
+                                    </ul>
+                                </li>
+                                <li class="with-dropdown">
+                                    <a class="menu-dropdown-link with-badge" data-toggle="collapse" aria-expanded="true" href="#"><i class="icon-grid"></i>Tables <span class="dropdown-icon"></span><span class="menu-badge bg-orange">2</span></a>
+                                    <ul class="menu-dropdown collapse">
+                                        <li><a href="tables-static.html">Static Tables</a></li>
+                                        <li><a href="tables-datatables.html">DataTables</a></li>
+                                    </ul>
+                                </li>
+                                <li class="with-dropdown">
+                                    <a class="menu-dropdown-link" data-toggle="collapse" aria-expanded="true" href="#"><i class="icon-document"></i>Forms <span class="dropdown-icon"></span></a>
+                                    <ul class="menu-dropdown collapse">
+                                        <li><a href="form-code-viewer.html">Code Viewer</a></li>
+                                        <li><a href="form-editor.html">Editor</a></li>
+                                        <li><a href="form-elements.html">Elements</a></li>
+                                        <li><a href="form-file-upload.html">File Upload</a></li>
+                                        <li><a href="form-wizard.html">Form Wizard</a></li>
+                                        <li><a href="form-picker.html">Picker</a></li>
+                                        <li><a href="form-x-editable.html">X-Editable</a></li>
+                                        <li class="with-dropdown-2">
+                                            <a class="menu-dropdown-link inner" data-toggle="collapse" aria-expanded="true" href="#">Validations <span class="dropdown-icon"></span></a>
+                                            <ul class="menu-dropdown collapse">
+                                                <li><a href="form-custom-errors.html">Custom</a></li>
+                                                <li><a href="form-recaptcha.html">Google Recaptcha</a></li>
+                                                <li><a href="form-html5.html">HTML5 Attributes</a></li>
+                                                <li><a href="form-live-validations.html">Live Validations</a></li>
+                                                <li><a href="form-post-validations.html">Post Validations</a></li>
+                                                <li><a href="form-tooltip-alerts.html">Tooltip-Alerts</a></li>
+                                                <li><a href="form-within-tab.html">Within Tab</a></li>
+                                                <li><a href="form-without-icons.html">Without Icons</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="with-badge" href="calendar.html"><i class="icon-calendar"></i> Calendar <span class="menu-badge bg-dark-green">New</span></a>
+                                </li>
+                                <li class="menu-heading">Layouts</li>
+                                <li class="with-dropdown">
+                                    <a class="menu-dropdown-link" data-toggle="collapse" aria-expanded="true" href="#"><i class="icon-envelope"></i>Headers <span class="dropdown-icon"></span></a>
+                                    <ul class="menu-dropdown collapse">
+                                        <li><a href="header-side.html" class="with-badge">Header - Side</a></li>
+                                        <li><a href="header-top.html">Header - Top</a></li>
+                                        <li><a href="header-fullscreen.html">Header - Fullscreen</a></li>
+                                        <li class="with-dropdown-2">
+                                            <a class="menu-dropdown-link inner" data-toggle="collapse" aria-expanded="true" href="#">Colors <span class="dropdown-icon"></span></a>
+                                            <ul class="menu-dropdown collapse">
+                                                <li><a href="header-light.html">Light</a></li>
+                                                <li><a href="header-dark-blue.html">Dark Blue</a></li>
+                                                <li><a href="header-blue.html">Blue</a></li>
+                                                <li><a href="header-blue-grey.html">Blue Grey</a></li>
+                                                <li><a href="header-dark-green.html">Dark Green</a></li>
+                                                <li><a href="header-green.html">Green</a></li>
+                                                <li><a href="header-purple.html">Purple</a></li>
+                                                <li><a href="header-red.html">Red</a></li>
+                                                <li><a href="header-orange.html">Orange</a></li>
+                                                <li><a href="header-yellow.html">Yellow</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="with-dropdown">
+                                    <a class="menu-dropdown-link" data-toggle="collapse" aria-expanded="true" href="#"><i class="icon-book-open"></i>Pages <span class="dropdown-icon"></span></a>
+                                    <ul class="menu-dropdown collapse">
+                                        <li><a href="blank-page.html">Blank Page</a></li>
+                                        <li><a href="error-404.html">Error 404</a></li>
+                                        <li><a href="error-500.html">Error 500</a></li>
+                                        <li><a target="_blank" href="frontend.html">Frontend</a></li>
+                                        <li><a href="login-register-1.html">Login/Register 1</a></li>
+                                        <li><a href="login-register-2.html">Login/Register 2</a></li>
+                                        <li><a href="lock-screen-1.html">Lock Screen 1</a></li>
+                                        <li><a href="lock-screen-2.html">Lock Screen 2</a></li>
+                                        <li><a href="user-account.html">User Account</a></li>
+                                        <li><a href="user-help.html">User Help</a></li>
+                                        <li><a href="user-profile.html">User Profile</a></li>
+                                    </ul>
+                                </li>
+                                <li class="with-dropdown">
+                                    <a class="menu-dropdown-link" data-toggle="collapse" aria-expanded="true" href="#"><i class="icon-envelope"></i>Inbox <span class="dropdown-icon"></span></a>
+                                    <ul class="menu-dropdown collapse">
+                                        <li><a href="mailbox.html" class="with-badge">Mail Box <span class="menu-badge bg-blue">3</span></a></li>
+                                        <li><a href="mail.html">Mail</a></li>
+                                        <li><a href="compose.html">Compose Mail</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header> <!-- End of Header -->
+        <!-- Sliding Chat : add "chat-light" along with "chat-slide" for light chat window-->
+
+        <div class="chat-slide">
+            <a href="#" class="chat-trigger"><i class="arrow_right"></i></a>
+
+            <!-- Tabs -->
+            <ul class="nav tab-theme tab-underline tab-light">
+                <li class="active">
+                    <a href="#tab-chat" data-toggle="tab"><i class="pe-7s-chat"></i></a>
+                </li>
+                <li>
+                    <a href="#tab-settings" data-toggle="tab"><i class="pe-7s-config"></i></a>
+                </li>
+            </ul>
+            <div class="tab-theme">
+                <div class="tab-content">
+                    <div id="tab-chat" class="tab-pane active">
+                        <div class="list-pane">
+                            <div class="chat-top container-fluid">
+                                <div class="row">
+                                    <div class="col-xs-8">
+                                        <h5>Friends List</h5>
+                                    </div>
+                                    <div class="col-xs-2 chat-top-icon">
+                                        <a href="#"><i class="icon_plus"></i></a>
+                                    </div>
+                                    <div class="col-xs-2 chat-top-icon">
+                                        <a href="#"><i class="pe-7s-more"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Search -->
+
+                            <div class="form-theme form-search">
+                                <div class="input-group">
+                                    <input class="form-control" name="search" id="search" type="text">
+                                    <span class="input-group-btn">
+                                        <a class="btn" href="#"><i class="icon_search"></i></a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="slim-scroll-content-friends">
+                                <div class="slim-scroll-div">
+
+                                    <!-- Friend List -->
+
+                                    <ul class="friend-list">
+                                        <li class="unread">
+                                            <a class="message-trigger" href="#">
+                                                <div class="media">
+                                                    <div class="media-left friend-online">
+                                                        <img alt="img" class="media-object" src="~/Assets/images/team/woman-test.jpg">
+                                                        <i></i>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">Jane Doe</h4>
+                                                        <small>Nulla vel metus</small>
+                                                    </div>
+                                                </div>
+                                                <span class="badge">1</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="message-trigger" href="#">
+                                                <div class="media">
+                                                    <div class="media-left friend-busy">
+                                                        <img alt="img" class="media-object" src="~/Assets/images/team/3-square.jpg">
+                                                        <i></i>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">John Doe</h4>
+                                                        <small>Nulla vel metus</small>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="unread">
+                                            <a class="message-trigger" href="#">
+                                                <div class="media">
+                                                    <div class="media-left friend-online">
+                                                        <img alt="img" class="media-object" src="~/Assets/images/team/man-test-2.jpg">
+                                                        <i></i>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">James Doe</h4>
+                                                        <small>Nulla vel metus</small>
+                                                    </div>
+                                                </div>
+                                                <span class="badge">3</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="message-trigger" href="#">
+                                                <div class="media">
+                                                    <div class="media-left friend-away">
+                                                        <img alt="img" class="media-object" src="~/Assets/images/team/2-square.jpg">
+                                                        <i></i>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">June Doe</h4>
+                                                        <small>Nulla vel metus</small>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="message-trigger" href="#">
+                                                <div class="media">
+                                                    <div class="media-left friend-busy">
+                                                        <img alt="img" class="media-object" src="~/Assets/images/team/man-test.jpg">
+                                                        <i></i>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">Jack Doe</h4>
+                                                        <small>Nulla vel metus</small>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="message-pane">
+                            <div class="container-fluid message-top">
+                                <div class="row">
+                                    <div class="col-xs-2">
+                                        <a href="#" class="message-trigger"><i class="arrow_left"></i></a>
+                                    </div>
+                                    <div class="col-xs-8 name">
+                                        John
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <a href="#" class="message-trigger"><i class="pe-7s-more"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slim-scroll-content-messages">
+                                <div class="slim-scroll-div">
+
+                                    <!-- Messages -->
+
+                                    <ul class="message-list">
+                                        <li>
+                                            <div class="message-body">
+                                                <p class="message">Hi, how are you?</p>
+                                                <p class="message">Could you give me a detailed report on the project we had discussed asap?</p>
+                                            </div>
+                                            <img alt="img" class="message-img" src="~/Assets/images/team/woman-test.jpg">
+                                        </li>
+                                        <li class="message-right">
+                                            <div class="message-body">
+                                                <p class="message">Sure, I'll send it to you in a few minutes.</p>
+                                            </div>
+                                            <img alt="img" class="message-img" src="~/Assets/images/team/man-test.jpg">
+                                        </li>
+                                        <li>
+                                            <div class="message-body">
+                                                <p class="message">Thanks.</p>
+                                            </div>
+                                            <img alt="img" class="message-img" src="~/Assets/images/team/woman-test.jpg">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="form-theme form-big">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-default" type="button"><i class="icon_plus"></i></button>
+                                        </span>
+                                        <input type="text" class="form-control" placeholder="Enter message">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-settings" class="tab-pane">
+                        <h4>General Settings</h4>
+                        <div class="slim-scroll-content-settings">
+                            <div class="slim-scroll-div">
+                                <ul class="settings-list">
+                                    <li>
+                                        <label class="setting-option">Notifications</label>
+                                        <div class="toggle">
+                                            <input type="checkbox" name="toggle" class="toggle-checkbox" id="set-toggle-1" checked>
+                                            <label class="toggle-label" for="set-toggle-1"></label>
+                                        </div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </li>
+                                    <li>
+                                        <label class="setting-option">Emails</label>
+                                        <div class="toggle">
+                                            <input type="checkbox" name="toggle" class="toggle-checkbox" id="set-toggle-2">
+                                            <label class="toggle-label" for="set-toggle-2"></label>
+                                        </div>
+                                        <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </li>
+                                    <li>
+                                        <label class="setting-option">Enable SMS Alerts</label>
+                                        <div class="toggle">
+                                            <input type="checkbox" name="toggle" class="toggle-checkbox" id="set-toggle-3">
+                                            <label class="toggle-label" for="set-toggle-3"></label>
+                                        </div>
+                                        <p>Consectetur adipisicing elit.</p>
+                                    </li>
+                                    <li>
+                                        <label class="setting-option">Show Tasks</label>
+                                        <div class="toggle">
+                                            <input type="checkbox" name="toggle" class="toggle-checkbox" id="set-toggle-4" checked>
+                                            <label class="toggle-label" for="set-toggle-4"></label>
+                                        </div>
+                                        <p>Leiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End of Tabs -->
+            </div>
+        </div><!-- End of Chat -->
+        @RenderBody()
+        @*<div class="section-admin container-fluid">
+            <div class="row admin text-center">
+                <div class="col-lg-4 col-sm-12">
+                    <div class="row">
+                        <div class="col-lg-12 col-sm-4">
+                            <div class="admin-content no-margin-top text-light text-left" style="background-color:#4c5667;">
+                                <table class="table table-theme">
+                                    <tbody>
+                                        <tr>
+                                            <td class="no-padding">
+                                                <div id="website-stats-1" class="chart-container theme-background-transparent" style="height:60px !important;"></div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="row vertical-center-box vertical-center-box-tablet mar-top-30">
+                                    <div class="col-xs-7 text-light">
+                                        <h3>Total Visits</h3>
+                                        <h2 class="no-margin">33000</h2>
+                                    </div>
+                                    <div class="col-xs-5 text-right">
+                                        <label class="label bg-blue" style="font-size:12px;"><i class="arrow_up"></i> 25%</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-sm-4">
+                            <div class="admin-content no-margin-top text-light text-left" style="background-color:#8a97ad;">
+                                <table class="table table-theme">
+                                    <tbody>
+                                        <tr>
+                                            <td class="no-padding">
+                                                <div id="website-stats-2" class="chart-container theme-background-transparent" style="height:60px !important;"></div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="row vertical-center-box vertical-center-box-tablet mar-top-30">
+                                    <div class="col-xs-7 text-light">
+                                        <h3>Total Sales</h3>
+                                        <h2 class="no-margin">50000</h2>
+                                    </div>
+                                    <div class="col-xs-5 text-right">
+                                        <label class="label bg-red" style="font-size:12px;"><i class="arrow_down"></i> 5%</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-sm-4">
+                            <div class="admin-content no-margin-top text-light text-left" style="background-color:#c7cfdb;">
+                                <table class="table table-theme">
+                                    <tbody>
+                                        <tr>
+                                            <td class="no-padding">
+                                                <div id="website-stats-3" class="chart-container theme-background-transparent" style="height:60px !important;"></div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="row vertical-center-box vertical-center-box-tablet mar-top-30">
+                                    <div class="col-xs-7 text-light">
+                                        <h3>Site Analysis</h3>
+                                        <h2 class="no-margin">75000</h2>
+                                    </div>
+                                    <div class="col-xs-5 text-right">
+                                        <label class="label bg-dark-green" style="font-size:12px;"><i class="arrow_up"></i> 17%</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-sm-12">
+                    <div class="admin-content">
+                        <h3>Site Visits</h3>
+                        <div class="row mar-top-30">
+                            <div class="col-md-12">
+                                <div id="Visitors" class="chart-container theme-background-transparent"></div>
+                            </div>
+                            <div class="col-md-12 text-center text-lighter text-uppercase mar-top-30">
+                                <div class="row">
+                                    <div class="col-md-2 col-xs-4">
+                                        <div id="sparkline1" class="sparkline-container">Loading..</div>
+                                        <h5><b>USA</b></h5>
+                                    </div>
+                                    <div class="col-md-2 col-xs-4">
+                                        <div id="sparkline2" class="sparkline-container">Loading..</div>
+                                        <h5><b>India</b></h5>
+                                    </div>
+                                    <div class="col-md-2 col-xs-4">
+                                        <div id="sparkline3" class="sparkline-container">Loading..</div>
+                                        <h5><b>UK</b></h5>
+                                    </div>
+                                    <div class="col-md-2 col-xs-4">
+                                        <div id="sparkline4" class="sparkline-container">Loading..</div>
+                                        <h5><b>Australia</b></h5>
+                                    </div>
+                                    <div class="col-md-2 col-xs-4">
+                                        <div id="sparkline5" class="sparkline-container">Loading..</div>
+                                        <h5><b>China</b></h5>
+                                    </div>
+                                    <div class="col-md-2 col-xs-4">
+                                        <div id="sparkline6" class="sparkline-container">Loading..</div>
+                                        <h5><b>France</b></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-admin container-fluid">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="admin-content">
+                        <h3>CPU Load</h3>
+                        <div id="live-chart" class="chart-container mar-top-30" style="height:285px !important;"></div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="admin-content">
+                        <div id="vmap_world" class="vmaps" style="height:335px !important;"></div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="admin-content">
+                        <h3>Browser Stats</h3>
+                        <table class="table table-theme mar-top-30">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Google Chrome
+                                    </td>
+                                    <td class="text-right">
+                                        <label class="label bg-green">35%</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Firefox
+                                    </td>
+                                    <td class="text-right">
+                                        <label class="label bg-orange">19%</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Apple Safari
+                                    </td>
+                                    <td class="text-right">
+                                        <label class="label bg-yellow">15%</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Opera
+                                    </td>
+                                    <td class="text-right">
+                                        <label class="label bg-red">5%</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Internet Explorer
+                                    </td>
+                                    <td class="text-right">
+                                        <label class="label bg-blue">5%</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mini Opera
+                                    </td>
+                                    <td class="text-right">
+                                        <label class="label bg-dark-green">16%</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mini Safari
+                                    </td>
+                                    <td class="text-right">
+                                        <label class="label bg-purple">21%</label>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>*@
+    </div><!-- End of Page Content -->
+    <!-- Footer -->
+
+    <footer class="footer container-fluid">
+        <div class="row">
+            <div class="col-md-12 ">
+                <p class="letter-spacing-1">©2017 Chris McGlynn. All rights reserved.</p>
+            </div>
+        </div>
+    </footer><!-- End of Footer -->
+    <!-- Loading Third Party Scripts -->
+    <script src="~/Assets/third-party/jquery/jquery.min.js"></script>
+    <script src="~/Assets/third-party/easing/js/jquery.easings.min.js"></script>
+    <script src="~/Assets/third-party/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/Assets/third-party/nivo-lightbox/js/nivo-lightbox.min.js"></script>
+    <script src="~/Assets/third-party/owl/js/owl.carousel.js"></script>
+    <script src="~/Assets/third-party/counter-up/js/jquery.counterup.min.js"></script>
+    <script src="~/Assets/third-party/form-validation/js/formValidation.js"></script>
+    <script src="~/Assets/third-party/form-validation/js/framework/bootstrap.min.js"></script>
+    <script src="~/Assets/third-party/waypoint/js/waypoints.min.js"></script>
+    <script src="~/Assets/third-party/wow/js/wow.min.js"></script>
+    <script src="~/Assets/third-party/slimscroll/jquery.slimscroll.js"></script>
+    <script src="~/Assets/http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
+
+    <!-- Loading Page's Scripts -->
+
+    <script src="~/Assets/third-party/flot/jquery.flot.min.js"></script>
+    <script src="~/Assets/third-party/flot/jquery.flot.time.js"></script>
+    <script src="~/Assets/third-party/flot/jquery.flot.pie.js"></script>
+    <script src="~/Assets/third-party/flot/jquery.flot.crosshair.js"></script>
+    <script src="~/Assets/third-party/flot/jquery.flot.threshold.js"></script>
+    <script src="~/Assets/third-party/flot/jquery.flot.stack.js"></script>
+    <script src="~/Assets/third-party/flot/jquery.flot.min.js"></script>
+    <script src="~/Assets/third-party/flot/jquery.flot.time.min.js"></script>
+    <script src="~/Assets/third-party/flot/jquery.flot.resize.min.js"></script>
+    <script src="~/Assets/third-party/jqv-map/dist/jquery.vmap.js"></script>
+    <script src="~/Assets/third-party/jqv-map/dist/maps/jquery.vmap.world.js"></script>
+    <script src="~/Assets/third-party/jqv-map/dist/maps/jquery.vmap.russia.js"></script>
+    <script src="~/Assets/third-party/jqv-map/dist/maps/jquery.vmap.germany.js"></script>
+    <script src="~/Assets/third-party/jqv-map/dist/maps/jquery.vmap.usa.js"></script>
+    <script src="~/Assets/third-party/jqv-map/examples/js/jquery.vmap.sampledata.js"></script>
+    <script src="~/Assets/pages/jqv-map.js"></script>
+    <script src="~/Assets/pages/flot-charts.js"></script>
+    <script type="~/Assets/text/javascript" src="~/Assets/third-party/sparkline/jquery.sparkline.min.js"></script>
+    <script type="~/Assets/text/javascript">
+		$(function() {
+			$("#sparkline1").sparkline([500,640,570,600,700,800,900,550,750,930], {
+				type: 'bar',
+				height: '65px',
+				barWidth: 5,
+				barSpacing: 2,
+				barColor: '#24caa1'
+			});
+			$("#sparkline2").sparkline([200,300,400,500,350,250,650,250,330,500], {
+				type: 'bar',
+				height: '65px',
+				barWidth: 5,
+				barSpacing: 2,
+				barColor: '#faca39'
+			});
+			$("#sparkline3").sparkline([100,150,250,175,350,275,150,100,225,375], {
+				type: 'bar',
+				height: '65px',
+				barWidth: 5,
+				barSpacing: 2,
+				barColor: '#805bbe'
+			});
+			$("#sparkline4").sparkline([300,400,500,200,300,400,200,100,500,300], {
+				type: 'bar',
+				height: '65px',
+				barWidth: 5,
+				barSpacing: 2,
+				barColor: '#2eb7f3'
+			});
+			$("#sparkline5").sparkline([150,250,225,275,175,200,350,120,160,250], {
+				type: 'bar',
+				height: '65px',
+				barWidth: 5,
+				barSpacing: 2,
+				barColor: '#ff7f5a'
+			});
+			$("#sparkline6").sparkline([200,250,275,285,295,150,300,650,500,450], {
+				type: 'bar',
+				height: '65px',
+				barWidth: 5,
+				barSpacing: 2,
+				barColor: '#4c5667'
+			});
+		});
+    </script>
+
+    <script>
+			var d1 = [[0, 9], [1, 8], [2, 5], [3, 8], [4, 5], [5, 14], [6, 10],[7, 8], [8, 5], [9, 14], [10, 10]];
+			$.plot("#website-stats-1", [{
+						data: d1, color: '#fff',
+						lines: { show: true, fill: true, fillColor: "rgba(255, 255, 255, 0.7)" }
+					}
+				],{
+				grid: {
+					show: false,
+					color: "rgb(48, 48, 48)",
+					tickColor: "rgba(255, 255, 255, 0)",
+					borderWidth: 1
+				},
+				series: {
+					lines: {
+						show: false,
+						fill: true
+					},
+					points: {
+						show: false
+					},
+				},
+				legend: {
+					labelBoxBorderColor: "none",
+					position: "right"
+				}
+			} );
+    </script>
+    <script>
+			var d2 = [[0, 5], [1, 12], [2, 4], [3, 3], [4, 12], [5, 11], [6, 14],[7, 12], [8, 8], [9, 4], [10, 8]];
+			$.plot("#website-stats-2", [{
+						data: d2, color: '#fff',
+						lines: { show: true, fill: true, fillColor: "rgba(255, 255, 255, 0.7)" }
+					}
+				],{
+				grid: {
+					show: false,
+					color: "rgb(48, 48, 48)",
+					tickColor: "rgba(255, 255, 255, 0)",
+					borderWidth: 1
+				},
+				series: {
+					lines: {
+						show: false,
+						fill: true
+					},
+					points: {
+						show: false
+					},
+				},
+				legend: {
+					labelBoxBorderColor: "none",
+					position: "right"
+				}
+			} );
+    </script>
+    <script>
+			var d3 = [[5, 14], [6, 10],[7, 8], [8, 5], [9, 14], [10, 10]];
+			$.plot("#website-stats-3", [{
+						data: d3, color: '#fff',
+						lines: { show: true, fill: true, fillColor: "rgba(255, 255, 255, 0.7)" }
+					}
+				],{
+				grid: {
+					show: false,
+					color: "rgb(48, 48, 48)",
+					tickColor: "rgba(255, 255, 255, 0)",
+					borderWidth: 1
+				},
+				series: {
+					lines: {
+						show: false,
+						fill: true
+					},
+					points: {
+						show: false
+					},
+				},
+				legend: {
+					labelBoxBorderColor: "none",
+					position: "right"
+				}
+			} );
+    </script>
+
+    <script>
+			$(function() {
+
+				var d = [[1196463600000, 0], [1196550000000, 0], [1196636400000, 0], [1196722800000, 77], [1196809200000, 3636], [1196895600000, 3575], [1196982000000, 2736], [1197068400000, 1086], [1197154800000, 676], [1197241200000, 1205], [1197327600000, 906], [1197414000000, 3010], [1197500400000, 2009], [1197586800000, 1040], [1197673200000, 1435], [1197759600000, 301], [1197846000000, 575], [1197932400000, 481], [1198018800000, 591], [1198105200000, 608], [1198191600000, 459], [1198278000000, 234], [1198364400000, 1352], [1198450800000, 686], [1198537200000, 279], [1198623600000, 449], [1198710000000, 468], [1198796400000, 392], [1198882800000, 282], [1198969200000, 208], [1199055600000, 229], [1199142000000, 177], [1199228400000, 374], [1199314800000, 436], [1199401200000, 404], [1199487600000, 253], [1199574000000, 218], [1199660400000, 476], [1199746800000, 462], [1199833200000, 448], [1199919600000, 442], [1200006000000, 403], [1200092400000, 204], [1200178800000, 194], [1200265200000, 327], [1200351600000, 374], [1200438000000, 507], [1200524400000, 546], [1200610800000, 482], [1200697200000, 283], [1200783600000, 221], [1200870000000, 483], [1200956400000, 523], [1201042800000, 528], [1201129200000, 483], [1201215600000, 452], [1201302000000, 270], [1201388400000, 222], [1201474800000, 439], [1201561200000, 559], [1201647600000, 521], [1201734000000, 477], [1201820400000, 442], [1201906800000, 252], [1201993200000, 236], [1202079600000, 525], [1202166000000, 477], [1202252400000, 386], [1202338800000, 409], [1202425200000, 1408], [1202511600000, 237], [1202598000000, 193], [1202684400000, 357], [1202770800000, 414], [1202857200000, 393], [1202943600000, 353], [1203030000000, 364], [1203116400000, 215], [1203202800000, 214], [1203289200000, 356], [1203375600000, 399], [1203462000000, 334], [1203548400000, 348], [1203634800000, 1243], [1203721200000, 526], [1203807600000, 1157], [1203894000000, 288]];
+
+				// first correct the timestamps - they are recorded as the daily
+				// midnights in UTC+0100, but Flot always displays dates in UTC
+				// so we have to add one hour to hit the midnights in the plot
+
+				for (var i = 0; i < d.length; ++i) {
+					d[i][0] += 60 * 60 * 1000;
+				}
+
+				// helper for returning the weekends in a period
+
+				function weekendAreas(axes) {
+
+					var markings = [],
+						d = new Date(axes.xaxis.min);
+
+					// go to the first Saturday
+
+					d.setUTCDate(d.getUTCDate() - ((d.getUTCDay() + 1) % 7))
+					d.setUTCSeconds(0);
+					d.setUTCMinutes(0);
+					d.setUTCHours(0);
+
+					var i = d.getTime();
+
+					// when we don't set yaxis, the rectangle automatically
+					// extends to infinity upwards and downwards
+
+					do {
+						markings.push({ xaxis: { from: i, to: i + 2 * 24 * 60 * 60 * 1000 } });
+						i += 7 * 24 * 60 * 60 * 1000;
+					} while (i < axes.xaxis.max);
+
+					return markings;
+				}
+
+				var options = {
+					xaxis: {
+						mode: "time",
+						tickLength: 5
+					},
+					series: {
+						lines: {
+							fill: true,
+							show: true,
+							fillColor: "rgba(63, 77, 159, 0.7)"
+						}
+					},
+					colors: ["#3f4d9f"],
+					grid: {
+						color: "#AFAFAF",
+						borderWidth: 0
+					}
+				};
+
+				var plot = $.plot("#Visitors", [d], options);
+			});
+    </script>
+
+    <!-- Loading Theme's Scripts -->
+    <script src="~/Assets/js/scripts.js"></script>
+    <script src="~/Assets/js/custom.js"></script>
+
+    <script>
+			$(function(){
+				$('.slim-scroll-div').slimscroll({
+					height: 'auto'
+				})
+			});
+    </script>
+
+    <!-- Google Analytics Tracking -->
+    <script>
+
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-xxxxxxx-x', 'auto');
+		ga('send', 'pageview');
+
+    </script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>
