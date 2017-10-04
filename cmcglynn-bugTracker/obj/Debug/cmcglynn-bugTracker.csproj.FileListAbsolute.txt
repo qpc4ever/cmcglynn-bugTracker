@@ -94,3 +94,7 @@ C:\Users\demol\documents\visual studio 2017\Projects\cmcglynn-bugTracker\cmcglyn
 C:\Users\demol\documents\visual studio 2017\Projects\cmcglynn-bugTracker\cmcglynn-bugTracker\obj\Debug\cmcglynn-bugTracker.dll
 C:\Users\demol\documents\visual studio 2017\Projects\cmcglynn-bugTracker\cmcglynn-bugTracker\obj\Debug\cmcglynn-bugTracker.pdb
 C:\Users\demol\documents\visual studio 2017\Projects\cmcglynn-bugTracker\cmcglynn-bugTracker\obj\Debug\cmcglynn-bugTracker.csprojResolveAssemblyReference.cache
+C:\Users\demol\documents\visual studio 2017\Projects\cmcglynn-bugTracker\cmcglynn-bugTracker\bin\PagedList.dll
+C:\Users\demol\documents\visual studio 2017\Projects\cmcglynn-bugTracker\cmcglynn-bugTracker\bin\PagedList.Mvc.dll
+C:\Users\demol\documents\visual studio 2017\Projects\cmcglynn-bugTracker\cmcglynn-bugTracker\bin\PagedList.xml
+C:\Users\demol\documents\visual studio 2017\Projects\cmcglynn-bugTracker\cmcglynn-bugTracker\bin\PagedList.Mvc.xml

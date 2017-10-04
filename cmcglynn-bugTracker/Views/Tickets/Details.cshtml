@@ -91,6 +91,19 @@
         </dd>
 
     </dl>
+
+   @using (Html.BeginForm("AddAttachments", "Tickets", FormMethod.Post, new { @class = "ticket-ticketAttachment", enctype = "multipart/form-data" }))
+   {
+    @Html.AntiForgeryToken()
+
+    <input type="file" name="files" multiple required />
+    <input type="hidden" name="ticketId" value="@Model.Id" hidden />
+    <button class="btn btn-default btn-lg" type="submit">Attach</button>
+   }
+@foreach (var attachment in Model.Attachments)
+{
+       < p > @attachment.FileUrl </ p >
+}
 </div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |

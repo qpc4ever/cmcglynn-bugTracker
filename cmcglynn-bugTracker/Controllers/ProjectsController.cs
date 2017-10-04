@@ -20,9 +20,9 @@ namespace cmcglynn_bugTracker.Controllers
         public ActionResult Index()
         {
             List<Project> projects = new List<Project>();
-            if (User.IsInRole("Admin, Project Manager"))
+            if (User.IsInRole("Admin") || User.IsInRole("Project Manager"))
                 projects = db.Projects.ToList();
-            else if (User.IsInRole("Developer, Submitter"))
+            else if (User.IsInRole("Developer") || User.IsInRole("Submitter"))
             {
                 ApplicationUser user = db.Users.Find(User.Identity.GetUserId());
                 projects = user.Projects.ToList();
